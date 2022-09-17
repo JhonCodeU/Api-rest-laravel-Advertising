@@ -14,6 +14,7 @@ class Customer extends Model
         'name',
         'last_name',
         'email',
+        'habeas_data',
         'cell_phone',
         'city_id'
     ];
