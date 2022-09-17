@@ -17,7 +17,13 @@ class CustomerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'dni' => $this->faker->unique()->randomNumber(8),
+            'name' => $this->faker->name,
+            'last_name' => $this->faker->lastName,
+            'email' => $this->faker->unique()->safeEmail,
+            'cell_phone' => $this->faker->phoneNumber,
+            'habeas_data' => true,
+            'city_id' => $this->faker->numberBetween(1, 64)
         ];
     }
 }

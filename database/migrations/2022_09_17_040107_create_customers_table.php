@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('cell_phone');
             $table->boolean('habeas_data');
-            //$table->unsignedBigInteger('city_id');
-            //$table->foreign('city_id')->references('id')->on('cities');
+            $table->unsignedBigInteger('city_id');
+            $table->foreign('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
     }
