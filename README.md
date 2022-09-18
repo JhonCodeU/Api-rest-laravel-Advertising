@@ -1,4 +1,24 @@
-# Curso de API REST con Laravel
+## Project Setup
+
+```sh
+composer install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+php artisan migration --seed
+php artisan migration:refresh --seed
+```
+
+### Run server
+
+```sh
+php artisan serve --port=8000
+```
+
+
+# API REST con Laravel
 
 ## ¿Qué es un API?
 
@@ -104,10 +124,7 @@ return view ('index', [
         ]);
     }
 }
-```
-```
-
-```php
+<?php
 public function getExcerptAttribute()
     {
 				// Content hace referencia al content en la db/migrations
